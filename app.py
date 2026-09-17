@@ -6,7 +6,7 @@ from google.genai import types
 try:
     CHAVE_API = st.secrets["CHAVE_API"]
 except:
-    CHAVE_API = "sem_chave_local"" # fallback local
+    CHAVE_API = "sem_chave_local"
 
 client = genai.Client(api_key=CHAVE_API)
 
